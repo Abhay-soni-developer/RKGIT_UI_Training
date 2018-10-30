@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /* #container div:first-child{
+            background-color: purple;
+        }
+        #container div:last-child{
+            background-color: purple;
+        }
+
+        #container div:nth-child(4){
+            background-color: red;
+        } */
+
+        #container div:nth-child(even){
+            background-color: purple;
+        }
+
+        /* .boxes .box1 */
+        /* .boxes.box1 */
+
+
+        .boxModel {
+            height: 200px;
+            width: 200px;
+            background-color: crimson;
+            /* padding: 40px; */
+            padding: 10px 20px 30px 40px;
+            border: 10px solid black;
+            border-bottom: 5px dotted green;
+            border-radius: 50%;
+            margin-top: 400px;
+        }
+
+        *{
+            box-sizing: border-box;
+        }
+    
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div><span>lorem8</span></div>
+        <div><span>lorem8</span></div>
+        <div><span>lorem8</span></div>
+        <div><span>lorem8</span></div>
+        <div><span>lorem8</span></div>
+        <div><span>lorem8</span></div>
+    </div>
+
+    <div class="boxModel"></div>
+</body>
+</html>

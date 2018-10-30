@@ -1,0 +1,20 @@
+
+INTRO:- Explained current technology trends.
+
+1.  UI vs UX.
+2.  Environment setup for UI developer (vs code installation + live server extension + icons extension + HTML/CSS hints extension).
+3.  emmet coding. (download cheat sheet and learn more).
+4.  HTML basic tags.
+5.  CSS selectors (., >, +, ~), combinators & what is specificity.
+6.  css pseudo classes (first child, last child, nth-child) (refer MDN or w3 to learn more pseudo selectors).
+7.  CSS text formatting.
+8.  CSS display (inline vs block vs inline-block).
+9.  CSS units.
+10. Float.
+
+Notice:- refer level 3 CSS selectors, practice inline, block and inline-block and float. 
+          we will be continuously using it in our project.
+          AND in the next class, we are gonna start making projects in which many important properties will be covered. 
+          So don't miss that class for any reason.
+          Thank you, 
+          practice Hard, Live Confidently.

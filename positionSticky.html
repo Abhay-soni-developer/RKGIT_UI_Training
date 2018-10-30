@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position-Sticky</title>
+    <style>
+
+        body{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.left {
+    float: left
+}
+
+.right {
+    float: right;
+}
+
+.clearfix::after{
+    display: block;
+    content: " ";
+    clear: both;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+
+.bg{
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.col {
+    height: 1500px;
+    width: 20px;
+    background-color: black;
+}
+
+    .menuBar {
+        height: 60px;
+        width: 100%;
+        background-color: blue;
+        position: sticky;
+        top: 0px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="secction">
+            <div class="bg"><img src="https://i.pinimg.com/originals/7b/d7/e8/7bd7e83af791ede2bc0281c467231158.jpg" alt="NA"></div>
+        </div>
+        <div class="menuBar">
+
+        </div>
+        <div class="col"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Spicy+Rice" rel="stylesheet">
+    <title>text wrap</title>
+    <style>
+        html,
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        p{
+            font-family: 'Poor Story', cursive;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        ul,
+        li {
+            list-style: none;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .left {
+            float: left
+        }
+
+        .right {
+            float: right;
+        }
+
+        .clearfix::after {
+            display: block;
+            content: " ";
+            clear: both;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: #3949AB;
+            position: relative;
+        }
+
+        .article {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 300px;
+            width: 450px;
+            background-color: white;
+            transform: translate(-50%, -50%);
+            border: 4px solid crimson;
+            border-radius: 25px 0px 25px 0px;
+            overflow: hidden;
+            padding: 5px;
+        }
+
+        .imgHolder {
+            height: 200px;
+            width: 200px;
+            overflow: hidden;
+            border: 15px solid transparent;
+            border-radius: 50%;
+            margin-top: 10px;
+            margin-left: 10px;
+            float: left;
+            margin-right: 0px;
+            shape-outside: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="article">
+            <div class="imgHolder"><img src="https://smedia2.intoday.in/btmt/images/stories/pmmodi_660_110816091951.jpg"
+                    alt=""></div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem ipsam ipsa modi commodi quae
+                sequi molestiae harum? Sint, laborum quas corrupti vero dignissimos non magnam, tempora reprehenderit
+                hic saepe aliquam facilis, provident vitae soluta suscipit ad enim minima libero. Voluptatibus esse
+                em id incidunt placeat nobis.</p>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,159 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+img {
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+section {
+    height: 600px;
+    width: 100%;
+}
+
+/* nav {
+    height: 60px;
+    width: 100%;
+    background-color: blue;
+    position: sticky;
+    top: 0px;
+} */
+
+nav {
+    position: sticky;
+    top: 0px;
+    z-index: 15;
+}
+
+.sec1 {
+    background-image: url(../images/1920x1080\ Naruto.jpg);
+    background-repeat: no-repeat;
+    /* background-size: 400px 400px; */
+}
+
+.sec2 {
+    background-image: url(../images/1920x1080_.jpg);
+    background-repeat: no-repeat;
+    position: sticky;
+    top: 60px;
+    /* background-size: 400px 400px; */
+}
+
+.sec3 {
+    background-image: url(../images/3d\ Wallpaperss\ 2012\ Full\ Hd\ Wallpapers\ 1080p.jpg);
+    background-repeat: no-repeat;
+    /* background-size: 400px 400px; */
+    position: sticky;
+    top: 60px;
+}
+
+
+a{
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1em;
+    display: block;
+    font-family: 'Spicy Rice', cursive;
+    letter-spacing: 5px;
+}
+/* 
+li div i {
+    color: white;
+} */
+
+span {
+    font-family: 'Poor Story', cursive;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+}
+
+.menuBar{
+    background-color: #3949AB;
+}
+.menuBar>li {
+    display: inline-block;
+    position: relative;
+}
+
+.menuBar>li>a {
+    min-width: 100px;
+}
+
+.menuBar>li>a, .dropDown ul li {
+    display: block;
+    height: 60px;
+    padding: 20px 10px 20px 10px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+
+.menuBar>li:hover>a{
+    border-bottom: 4px solid #E91E63;
+}
+
+.dropDown{
+    position: absolute;
+    top: 60px;
+    left: 0px;
+    display: none;
+    width: 100%;
+    z-index: 10;
+}
+
+.menuBar>li:hover .dropDown {
+    display: block;
+}
+.dropDown ul li {
+    background-color: #3F51B5;
+    border-bottom: 1px solid white;
+}
+
+.dropDown ul li a{
+    display: block;
+    height: 60px;
+}
+
+.dropDown ul li span {
+    color: white;
+}
+
+

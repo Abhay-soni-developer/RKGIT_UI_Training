@@ -1,0 +1,33 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul, li{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.left {
+    float: left
+}
+
+.right {
+    float: right;
+}
+
+.clearfix::after{
+    display: block;
+    content: " ";
+    clear: both;
+}
+
+*{
+    box-sizing: border-box;
+}
+

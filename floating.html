@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>floating</title>
+    <style>
+        .parent {
+            background-color: red;
+        }
+
+        .child1 {
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            float: left;
+        }
+
+        .child2 {
+            float: right;
+            height: 300px;
+            width: 300px;
+            background-color: brown;
+        }
+
+        .clearfix::after {
+            content: " ";
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="parent clearfix">
+            <div class="child1"></div>
+            <div class="child2"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
