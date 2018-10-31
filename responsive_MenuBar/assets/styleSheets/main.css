@@ -1,0 +1,134 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul,li{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.clearfix::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+img {
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Poor+Story');
+
+.menuBar {
+    background-color: #303F9F;
+}
+.menuBar>ul>li{
+    display: inline-block;
+}
+
+.menuBar>ul>li>a{
+    display: block;
+    padding: 20px 20px;
+    text-align: center;
+    /* height: 63px; */
+    border-top: 4px solid transparent;
+}
+.menuBar>ul>li:hover>a{
+    border-top: 4px solid #E91E63;
+}
+
+
+.menuBar>ul>li>a>span{
+    text-transform: uppercase;
+    font-family: 'Poor Story', cursive;
+    color: white;
+}
+
+.hamMenu {
+    height: 63px;
+    background-color: #283593;
+    display: none;
+}
+
+.hamIcon{
+    color: white;
+}
+
+.hamIcon, #menuToggle{
+    display: none !important;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+#menuToggle {
+    height: 40px;
+    width: 40px;
+    z-index: 10;
+    cursor: pointer;
+    opacity: 0;
+}
+
+@media (max-width:768px){
+
+    .hamMenu, .hamIcon, #menuToggle{
+        display: block !important;
+    }
+    .menuBar{
+        position: relative;
+    }
+
+    .menuBar>ul>li{
+        display: block;
+    }
+
+    .menuBar>ul>li:hover>a,.menuBar>ul>li>a{
+        border-top: none;
+    }
+
+    .menuBar>ul>li:hover>a{
+        background-color: #3F51B5;
+    }
+
+    .dropDown {
+        display: none;
+    }
+
+    #menuToggle:checked ~ .dropDown {
+        display: block;
+    }
+}
+
+/* point of breaking
+
+1200px
+992px
+768px mobile display on
+640px;
+480px
+360px, */
